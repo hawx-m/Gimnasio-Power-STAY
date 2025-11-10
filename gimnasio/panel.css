@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #002b5b;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  flex: 1;
+}
+
+.tarjeta {
+  background-color: white;
+  width: 280px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.tarjeta h2 {
+  color: #002b5b;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #002b5b;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #002b5b;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.consultor-panel {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    margin-top: 16px;
+}
+
+.consulta-result {
+    max-height: 200px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.reserva-item {
+    padding: 8px;
+    margin-bottom: 6px;
+    background: white;
+    border-radius: 4px;
+    border-left: 4px solid #007bff;
+    font-size: 13px;
+}

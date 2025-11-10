@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrar Reservación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f7fb;
+            text-align: center;
+            padding: 40px;
+        }
+
+        form {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            width: 320px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, select, button {
+            width: 100%;
+            margin-top: 5px;
+            padding: 8px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 20px;
+            background-color: #0b6cf3;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #084dbf;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registrar Reservación</h2>
+    <form action="registrar_reservacion.php" method="POST">
+        <label>ID del Cliente:</label>
+        <input type="number" name="id_cliente" required>
+
+        <label>ID de la Clase:</label>
+        <input type="number" name="id_clase" required>
+
+        <label>Fecha de Reservación:</label>
+        <input type="date" name="fecha" required>
+
+        <label>ID entrenador</label>
+        <input type="number" name="Entrenador" required>
+
+        <label>Hora de Reservación:</label>
+        <input type="time" name="hora" required>
+
+        <label>Estado:</label>
+        <select name="estado" required>
+            <option value="Activa">Activa</option>
+            <option value="Cancelada">Cancelada</option>
+        </select>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>

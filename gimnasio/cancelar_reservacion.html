@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cancelar Reservación</title>
+  <link rel="stylesheet" href="estiloeditor.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>Panel del Editor - Gym</header>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+
+    <!-- Barra lateral -->
+    <div class="sidebar">
+      <a href="editor.html">Inicio</a>
+
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+      <h2>Cancelar Reservación</h2>
+      <p>Ingrese el ID de la reservación que desea cancelar.</p>
+
+      <form action="cancelar_reservacion.php" method="POST" style="background:#fff; padding:20px; border-radius:10px; width:300px; box-shadow:0 4px 6px rgba(0,0,0,0.1);">
+        <label for="id_reservacion">ID de la Reservación:</label><br>
+        <input type="number" name="id_reservacion" required style="width:100%; padding:8px; margin-top:5px; margin-bottom:15px; border-radius:5px; border:1px solid #ccc;"><br>
+
+        <button type="submit">Cancelar</button>
+      </form>
+
+      <br>
+      <a href="editor.html" style="text-decoration:none; color:#1abc9c;">← Volver al panel</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
